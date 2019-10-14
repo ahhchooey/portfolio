@@ -1,14 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap');
 
 .term {
   background-color: rgb(30, 30, 30);
-  width: 600px;
-  height: 700px;
+  width: 47.5%;
+  height: 90%;
   border-radius: 5px;
   box-shadow: 0 0 8px rgb(10, 10, 10);
   overflow: hidden;
+  padding-bottom: 15px;
 
   display: flex;
   flex-direction: column;
+}
+
+.term:hover {
+  cursor: text;
 }
 
 .topbar {
@@ -21,6 +27,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-shrink: 0;
+}
+
+.topbar:hover {
+  cursor: default;
 }
 
 .topbar-buttons {
@@ -55,13 +66,57 @@
 }
 
 .instructions {
-  padding: 15px 5px 0 5px;
+  padding: 15px 10px 0 10px;
+  font-size: 20px;
+  font-family: 'Inconsolata', monospace;
+
+  flex-shrink: 0;
 }
 
 .links {
-  padding: 10px 5px 0 5px;
+  padding: 10px 10px 10px 10px;
+  font-size: 20px;
+  font-family: 'Inconsolata', monospace;
+
+  flex-shrink: 0;
+}
+
+.links a {
+  color: rgb(0, 255, 255);
+  text-decoration: none;
 }
 
 .cli {
-  padding: 10px 5px 0 5px;
+  position: relative;
+  padding: 5px 10px 0 10px;
+  font-size: 20px;
+  font-family: 'Inconsolata', monospace;
+  overflow: scroll;
+}
+
+.cli-location {
+  color: pink;
+  font-weight: bold;
+}
+
+.cli-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: red;
+  font-weight: bold;
+}
+
+.cli-text {
+  background-color: rgb(30, 30, 30);
+  font-size: 20px;
+  font-family: 'Inconsolata', monospace;
+  width: 95%;
+  border: 0px;
+
+  outline: 0;
+  resize: none;
+}
+
+.cli-history {
 }

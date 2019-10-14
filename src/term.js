@@ -6,7 +6,7 @@ import CLI from "./cli.js";
 
 function Term() {
 
-  const [date, setDate] = useState(new Date());
+  const [date] = useState(new Date());
 
   const daysOfWeek = [
     "Sunday",
@@ -33,14 +33,17 @@ function Term() {
     "December"
   ]
 
-  const projectsLink = () => {
-    return (
-      <Link to={"/projects"}>Projects</Link>
-    )
+  let cliText;
+  const setCliText = (ref) => {
+    cliText = ref;
+  }
+
+  const focusCLI = (e) => {
+    cliText.focus();
   }
 
   return (
-    <div className="term">
+    <div className="term" onClick={focusCLI}>
       <div className="topbar">
 
         <div className="topbar-buttons">
@@ -64,10 +67,15 @@ function Term() {
       </div>
 
       <div className="links">
-        {`{"${projectsLink()}"}`}
+        {`{ `}
+          "<Link to={"/"}>Root</Link>",
+          "<Link to={"/projects"}>Projects</Link>",
+          "<Link to={"/changelog"}>Changelog</Link>",
+          "<Link to={"/contact"}>Contact</Link>"
+        {` }`}
       </div>
 
-      <CLI />
+      <CLI setCliText={setCliText} />
 
     </div>
   )

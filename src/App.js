@@ -3,6 +3,11 @@ import {BrowserRouter, Route} from "react-router-dom";
 import './styles/App.css';
 
 import Term from "./term.js";
+import Home from "./home.js";
+import Projects from "./projects.js";
+import Changelog from "./changelog.js";
+import Contact from "./contact.js";
+
 
 function App() {
   return (
@@ -10,6 +15,10 @@ function App() {
       <div className="App">
 
         <Route path="/" component={Term} />
+        <Route exact path="/" component={Home} />
+        <Route path="/projects" component={Projects} /> 
+        <Route path="/changelog" component={Changelog} /> 
+        <Route path="/contact" component={Contact} /> 
 
       </div>
     </BrowserRouter>
