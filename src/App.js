@@ -1,13 +1,16 @@
 import React from 'react';
-import './App.css';
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, Route} from "react-router-dom";
+import './styles/App.css';
 
+import Term from "./term.js";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        this is app
+
+        <Route path="/" component={Term} />
+
       </div>
     </BrowserRouter>
   );
