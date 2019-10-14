@@ -44,6 +44,9 @@ function CLI(props) {
       case "clear":
         clearHistory();
         break;
+      case "help":
+        inputHelp();
+        break;
       default:
         inputUnknown(iV);
     }
@@ -60,27 +63,51 @@ function CLI(props) {
     history.innerHTML = "";
   }
 
+  const inputHelp = () => {
+    const point = document.createElement("div");
+
+    const root = document.createElement("div");
+    root.innerHTML = "go to root - cd .. or root"
+    const projects = document.createElement("div");
+    projects.innerHTML = "go to projects - cd projects or projects"
+    const changelog = document.createElement("div");
+    changelog.innerHTML = "go to changelog - cd changelog or changelog"
+    const contacts = document.createElement("div");
+    contacts.innerHTML = "go to contact - cd contact or contact"
+
+    const clear = document.createElement("div");
+    clear.innerHTML = "clear terminal - clear"
+
+    point.append(root, projects, changelog, contacts, clear);
+
+    history.append(point);
+  }
+
   const inputRoot = (iV) => {
-    props.history.push("/")
+    props.history.push("/");
   }
 
   const inputProjects = (iV) => {
-    props.history.push("/projects")
+    props.history.push("/projects");
   }
 
   const inputChangelog = (iV) => {
-    props.history.push("/changelog")
+    const point = document.createElement("div");
+    point.innerHTML = "Opening changelog...";
+    history.append(point);
+
+    props.history.push("/changelog");
   }
 
   const inputContact = (iV) => {
-    props.history.push("/contact")
+    props.history.push("/contact");
   }
 
   const inputUnknown = (iV) => {
     const point = document.createElement("div");
-    point.append(`zsh: command not found: ${iV}`)
+    point.append(`zsh: command not found: ${iV}`);
 
-    history.append(point)
+    history.append(point);
   }
 
   const inputHistory = (iV) => {

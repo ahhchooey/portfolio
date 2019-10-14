@@ -1,0 +1,18 @@
+
+.changelog {
+  background-color: rgb(50, 50, 50);
+  width: 47.5%;
+  height: 90%;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgb(10, 10, 10);
+  overflow: hidden;
+  padding-bottom: 15px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutme {
+  padding: 15px;
+  font-size: 20px;
+}

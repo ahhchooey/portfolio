@@ -44,6 +44,7 @@ function Term() {
 
   return (
     <div className="term" onClick={focusCLI}>
+
       <div className="topbar">
 
         <div className="topbar-buttons">
@@ -68,10 +69,12 @@ function Term() {
 
       <div className="links">
         {`{ `}
-          "<Link to={"/"}>Root</Link>",
-          "<Link to={"/projects"}>Projects</Link>",
-          "<Link to={"/changelog"}>Changelog</Link>",
-          "<Link to={"/contact"}>Contact</Link>"
+          "<Link to={"/"}>Root</Link>":
+            {` {`}
+              "<Link to={"/projects"}>Projects</Link>",
+              "<Link to={"/changelog"}>Changelog</Link>",
+              "<Link to={"/contact"}>Contact</Link>"
+            {`}`}
         {` }`}
       </div>
 
