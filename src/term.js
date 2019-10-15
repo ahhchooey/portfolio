@@ -41,7 +41,7 @@ function Term(props) {
   useEffect(() => {
     history = document.querySelector(".cli-history");
     cli = document.querySelector(".cli");
-  }, [])
+  })
 
   let cliText;
   const setCliText = (ref) => {
