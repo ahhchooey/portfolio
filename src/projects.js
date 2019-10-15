@@ -5,7 +5,6 @@ import "./styles/projects.css";
 const projectList = [
   {
     title: "Note",
-
   },
   {
     title: "SafeWalker",
@@ -20,7 +19,7 @@ function Projects() {
   return (
     <div className="projects">
       {
-        projectList.map(project => <ProjectItem project={project} />)
+        projectList.map((project, i) => <ProjectItem key={i} project={project} />)
       }
     </div>
   )
@@ -29,7 +28,7 @@ function Projects() {
 function ProjectItem(props) {
 
   return (
-    <div class="project-item">
+    <div className="project-item">
 
       <div className="topbar">
 

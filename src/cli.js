@@ -118,7 +118,7 @@ function CLI(props) {
     history.append(point);
   }
 
-  const inputHistory = (iV) => {
+  const inputHistory = () => {
     const point = document.createElement("div");
     point.append(`~/alexchui${historyValue}`);
     point.classList.add("cli-location");

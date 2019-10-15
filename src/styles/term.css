@@ -81,9 +81,13 @@
   flex-shrink: 0;
 }
 
-.links a {
+.link {
   color: rgb(0, 255, 255);
   text-decoration: none;
+}
+
+.link:hover {
+  cursor: pointer;
 }
 
 .cli {

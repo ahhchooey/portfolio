@@ -1,10 +1,11 @@
-import React, {useState} from "react";
-import {Link} from "react-router-dom";
+import React, {useState, useEffect} from "react";
+import {withRouter} from "react-router-dom";
 import "./styles/term.css";
 
 import CLI from "./cli.js";
 
-function Term() {
+
+function Term(props) {
 
   const [date] = useState(new Date());
 
@@ -33,6 +34,15 @@ function Term() {
     "December"
   ]
 
+  const historyValue = props.history.location.pathname;
+  let cli = document.querySelector(".cli");
+  let history = document.querySelector(".cli-history");
+
+  useEffect(() => {
+    history = document.querySelector(".cli-history");
+    cli = document.querySelector(".cli");
+  }, [])
+
   let cliText;
   const setCliText = (ref) => {
     cliText = ref;
@@ -40,6 +50,65 @@ function Term() {
 
   const focusCLI = (e) => {
     cliText.focus();
+  }
+
+  const inputHistory = (iV) => {
+    const point = document.createElement("div");
+    point.append(`~/alexchui${historyValue}`);
+    point.classList.add("cli-location");
+
+    const point2 = document.createElement("div");
+    point2.append(`> ${iV}`);
+
+    history.append(point, point2);
+  }
+
+  const inputGap = () => {
+    const br = document.createElement("br");
+    history.append(br);
+
+    cli.scrollTop = cli.scrollHeight;
+  }
+
+  const pushRoot = (e) => {
+    e.preventDefault();
+    inputHistory("root");
+
+    inputGap();
+    props.history.push("/")
+  }
+
+  const pushProjects = (e) => {
+    e.preventDefault();
+    inputHistory("projects");
+    const point = document.createElement("div");
+    point.innerHTML = "Opening projects...";
+    history.append(point);
+
+    inputGap();
+    props.history.push("/projects")
+  }
+
+  const pushChangeLog = (e) => {
+    e.preventDefault();
+    inputHistory("changelog");
+    const point = document.createElement("div");
+    point.innerHTML = "Opening changelog...";
+    history.append(point);
+
+    inputGap();
+    props.history.push("/changelog")
+  }
+
+  const pushContact = (e) => {
+    e.preventDefault();
+    inputHistory("contact");
+    const point = document.createElement("div");
+    point.innerHTML = "Opening contact information...";
+    history.append(point);
+    
+    inputGap();
+    props.history.push("/contact")
   }
 
   return (
@@ -69,11 +138,11 @@ function Term() {
 
       <div className="links">
         {`{ `}
-          "<Link to={"/"}>Root</Link>":
+          "<span className="link" onMouseDown={pushRoot}>Root</span>":
             {` {`}
-              "<Link to={"/projects"}>Projects</Link>",
-              "<Link to={"/changelog"}>Changelog</Link>",
-              "<Link to={"/contact"}>Contact</Link>"
+              "<span className="link" onMouseDown={pushProjects}>Projects</span>",
+              "<span className="link" onMouseDown={pushChangeLog}>Changelog</span>",
+              "<span className="link" onMouseDown={pushContact}>Contact</span>"
             {`}`}
         {` }`}
       </div>
@@ -84,4 +153,4 @@ function Term() {
   )
 }
 
-export default Term;
+export default withRouter(Term);
