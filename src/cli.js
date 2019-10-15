@@ -33,6 +33,10 @@ function CLI(props) {
       case "cd projects":
         inputProjects(iV);
         break;
+      case "skills":
+      case "cd skills":
+        inputSkills(iV);
+        break;
       case "changelog":
       case "cd changelog":
         inputChangelog(iV);
@@ -89,10 +93,18 @@ function CLI(props) {
 
   const inputProjects = (iV) => {
     const point = document.createElement("div");
-    point.innerHTML = "Opening projects...";
+    point.innerHTML = "Loading projects...";
     history.append(point);
 
     props.history.push("/projects");
+  }
+
+  const inputSkills = (iV) => {
+    const point = document.createElement("div");
+    point.innerHTML = "Getting skills...";
+    history.append(point);
+
+    props.history.push("/skills");
   }
 
   const inputChangelog = (iV) => {
@@ -105,7 +117,7 @@ function CLI(props) {
 
   const inputContact = (iV) => {
     const point = document.createElement("div");
-    point.innerHTML = "Opening contact information...";
+    point.innerHTML = "Retrieving contact information...";
     history.append(point);
 
     props.history.push("/contact");
