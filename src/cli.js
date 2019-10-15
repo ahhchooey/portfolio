@@ -88,6 +88,10 @@ function CLI(props) {
   }
 
   const inputProjects = (iV) => {
+    const point = document.createElement("div");
+    point.innerHTML = "Opening projects...";
+    history.append(point);
+
     props.history.push("/projects");
   }
 
@@ -100,6 +104,10 @@ function CLI(props) {
   }
 
   const inputContact = (iV) => {
+    const point = document.createElement("div");
+    point.innerHTML = "Opening contact information...";
+    history.append(point);
+
     props.history.push("/contact");
   }
 

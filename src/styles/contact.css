@@ -1,0 +1,15 @@
+
+.contact {
+  position: relative;
+  width: 47.5%;
+  height: 50%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.contact-body {
+  padding: 15px 10px;
+  text-align: start;
+  font-size: 20px;
+}

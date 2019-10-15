@@ -12,7 +12,16 @@ function Home() {
   const thingsToSay = [
     `Hi, I'm Alex.`,
     `I'm a software developer.`,
-    `For me, it's all about the culture and fit.`
+    `For me, it's all about the culture and fit.`,
+    `I'm sure we'll find something that will benefit both of us.`,
+    `As long as you pay me.`,
+    `And I get to do whatever I want.`,
+    `You might have forgotten as to who I am already.`,
+    `I'm a Alex.`,
+    `Don't quote me.`,
+    `Bye.`,
+    `Go away.`,
+    `Bye`
   ]
 
   useEffect(() => {
@@ -54,9 +63,9 @@ function Home() {
 
   return (
     <div className="home">
-      <div className="typewriter">
-        Hi, I'm Alex.
-      </div>
+
+      <div className="typewriter"></div>
+
     </div>
   )
 }

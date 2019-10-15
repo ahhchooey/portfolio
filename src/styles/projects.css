@@ -1,0 +1,33 @@
+
+.projects {
+  position: relative;
+  width: 47.5%;
+  height: 90%;
+  overflow: scroll;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.project-item {
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 0 8px rgb(10, 10, 10);
+  width: 95%;
+  height: 45%;
+  margin-bottom: 20px;
+  overflow: hidden;
+
+  flex-shrink: 0;
+}
+
+.project-item:last-child {
+  margin-bottom: 0px;
+}
+
+.project-item-body {
+  padding: 15px 10px;
+  font-size: 20px;
+}
