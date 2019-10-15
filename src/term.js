@@ -82,11 +82,22 @@ function Term(props) {
     e.preventDefault();
     inputHistory("projects");
     const point = document.createElement("div");
-    point.innerHTML = "Opening projects...";
+    point.innerHTML = "Loading projects...";
     history.append(point);
 
     inputGap();
     props.history.push("/projects")
+  }
+
+  const pushSkills = (e) => {
+    e.preventDefault();
+    inputHistory("skills");
+    const point = document.createElement("div");
+    point.innerHTML = "Getting skills...";
+    history.append(point);
+
+    inputGap();
+    props.history.push("/skills")
   }
 
   const pushChangeLog = (e) => {
@@ -104,7 +115,7 @@ function Term(props) {
     e.preventDefault();
     inputHistory("contact");
     const point = document.createElement("div");
-    point.innerHTML = "Opening contact information...";
+    point.innerHTML = "Retrieving contact information...";
     history.append(point);
     
     inputGap();
@@ -141,6 +152,7 @@ function Term(props) {
           "<span className="link" onMouseDown={pushRoot}>Root</span>":
             {` {`}
               "<span className="link" onMouseDown={pushProjects}>Projects</span>",
+              "<span className="link" onMouseDown={pushSkills}>Skills</span>",
               "<span className="link" onMouseDown={pushChangeLog}>Changelog</span>",
               "<span className="link" onMouseDown={pushContact}>Contact</span>"
             {`}`}

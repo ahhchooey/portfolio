@@ -24,7 +24,7 @@ function Contact() {
       </div>
 
       <div className="contact-body">
-        i am contacts
+        Feel free to contact me through any of the below:
       </div>
     </div>
   )
