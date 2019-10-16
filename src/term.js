@@ -142,7 +142,7 @@ function Term(props) {
       </div>
 
       <div className="instructions">
-        Click or type to navigate.
+        Type in the terminal or click on the blue links to navigate.
         <br/>
         Type "help" to see commands, "clear" to clear the terminal.
       </div>

@@ -57,7 +57,6 @@ function ProjectItem(props) {
         </div>
 
         <div className="titlebar">
-          {props.project.title}
         </div>
 
         <div className="mac-symbols">&#8997;&#8984;1</div>
@@ -65,13 +64,14 @@ function ProjectItem(props) {
       </div>
 
       <div className="project-item-body">
+        <h1>{props.project.title}</h1>
         <img src={props.project.image} alt="project screen" />
         <table className="project-item-table">
           <tbody>
             <tr>
               <td>Info:&nbsp;</td>
               <td className="project-item-info">
-                {props.project.title} | <a href={props.project.livelink}>Live</a> | <a href={props.project.github}>Code</a> 
+                <a href={props.project.livelink}>Live</a> | <a href={props.project.github}>Code</a> 
               </td>
             </tr>
             <tr>

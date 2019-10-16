@@ -14,7 +14,7 @@
 .project-item {
   border-radius: 5px;
   position: relative;
-  background-color: rgb(10, 10, 10);
+  background-color: rgb(100, 100, 100);
   box-shadow: 0 0 8px rgb(10, 10, 10);
   width: 95%;
   min-height: 45%;
@@ -31,7 +31,8 @@
 
 .project-item-body {
   padding: 10px 10px;
-  font-size: 15px;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .project-item-body img {
@@ -47,4 +48,10 @@
 .project-item-info a {
   text-decoration: none;
   color: rgb(0, 255, 255);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
