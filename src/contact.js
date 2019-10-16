@@ -16,7 +16,7 @@ function Contact() {
         </div>
 
         <div className="titlebar">
-          Contact Information
+          Alex Chui | Contact Information
         </div>
 
         <div className="mac-symbols">&#8997;&#8984;1</div>

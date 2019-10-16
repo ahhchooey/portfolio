@@ -37,7 +37,7 @@ function Projects() {
   return (
     <div className="projects">
       {
-        projectList.map((project, i) => <ProjectItem key={i} project={project} />)
+        projectList.map((project, i) => <ProjectItem key={i} i={i+1} project={project} />)
       }
     </div>
   )
@@ -57,6 +57,7 @@ function ProjectItem(props) {
         </div>
 
         <div className="titlebar">
+          Alex Chui | Project {props.i}
         </div>
 
         <div className="mac-symbols">&#8997;&#8984;1</div>

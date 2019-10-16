@@ -16,7 +16,7 @@ function Changelog() {
         </div>
 
         <div className="titlebar">
-          Changelog
+          Alex Chui | Changelog
         </div>
 
         <div className="mac-symbols">&#8997;&#8984;2</div>
