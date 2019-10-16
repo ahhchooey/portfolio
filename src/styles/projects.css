@@ -13,10 +13,11 @@
 
 .project-item {
   border-radius: 5px;
+  position: relative;
   background-color: rgb(10, 10, 10);
   box-shadow: 0 0 8px rgb(10, 10, 10);
   width: 95%;
-  height: 45%;
+  min-height: 45%;
   margin-top: 5px;
   margin-bottom: 20px;
   overflow: hidden;
@@ -29,6 +30,21 @@
 }
 
 .project-item-body {
-  padding: 15px 10px;
-  font-size: 20px;
+  padding: 10px 10px;
+  font-size: 15px;
+}
+
+.project-item-body img {
+  width: 100%;
+  height: auto;
+}
+
+.project-item-table > tbody > tr > td {
+  vertical-align: top;
+  padding: 5px;
+}
+
+.project-item-info a {
+  text-decoration: none;
+  color: rgb(0, 255, 255);
 }

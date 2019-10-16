@@ -25,6 +25,10 @@ function Changelog() {
 
       <div className="aboutme">
         Hi. My name is Alex.
+        <br />
+        <br />
+        I am a software engineer that likes to build cool things. Before entering the software world, I was a biology researcher in cellular development. I love to tackle difficult and interesting problems to hopefully create a positive impact on the world.
+        This is my changelog:
       </div>
 
     </div>

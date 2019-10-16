@@ -16,3 +16,6 @@
   color: rgb(225, 225, 225);
 }
 
+.contact-body a {
+  text-decoration: none;
+}

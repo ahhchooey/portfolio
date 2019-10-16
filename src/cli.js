@@ -74,6 +74,8 @@ function CLI(props) {
     root.innerHTML = "go to root - cd .. or root"
     const projects = document.createElement("div");
     projects.innerHTML = "go to projects - cd projects or projects"
+    const skills = document.createElement("div");
+    skills.innerHTML = "go to skills - cd skills or skills"
     const changelog = document.createElement("div");
     changelog.innerHTML = "go to changelog - cd changelog or changelog"
     const contacts = document.createElement("div");
@@ -82,7 +84,7 @@ function CLI(props) {
     const clear = document.createElement("div");
     clear.innerHTML = "clear terminal - clear"
 
-    point.append(root, projects, changelog, contacts, clear);
+    point.append(root, projects, skills, changelog, contacts, clear);
 
     history.append(point);
   }
