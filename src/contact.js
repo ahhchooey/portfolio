@@ -24,15 +24,8 @@ function Contact() {
       </div>
 
       <div className="contact-body">
-        Feel free to contact me through any of the below:
+        Feel free to email me at <a href="mailto: ahhchui@gmail">ahhchui@gmail.com</a> or use the form below.
         <br />
-        Email: <a href="mailto: ahhchui@gmail">ahhchui@gmail.com</a>
-        <br />
-        Phone: (925) - 786 - 5275
-        <br />
-        Github: 
-        <br />
-        LinkedIn:
       </div>
     </div>
   )
