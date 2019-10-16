@@ -15,4 +15,16 @@
 .skills-body {
   font-size: 20px;
   padding: 15px 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+svg {
+  height: 80px;
+  width: 80px;
+  margin: 15px;
 }
