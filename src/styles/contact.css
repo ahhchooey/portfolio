@@ -10,12 +10,31 @@
 }
 
 .contact-body {
+  width: 100%;
+  height: 90%;
   padding: 15px 15px;
   text-align: start;
   font-size: 20px;
   color: rgb(225, 225, 225);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .contact-body a {
   text-decoration: none;
+}
+
+.contact-links {
+  display: flex;
+}
+
+.github, .linkedin, .angelist {
+  fill: white;
+}
+
+.github:hover, .linkedin:hover, .angelist:hover {
+  fill: #ccc;
 }
