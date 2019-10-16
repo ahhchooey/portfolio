@@ -6,6 +6,7 @@
   height: 90%;
   border-radius: 5px;
   box-shadow: 0 0 8px rgb(10, 10, 10);
+  position: relative;
   overflow: hidden;
   padding-bottom: 15px;
 
@@ -120,4 +121,21 @@
 
   outline: 0;
   resize: none;
+}
+
+.term-socials {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.github-term, .linkedin-term, .angelist-term {
+  margin: 5px;
+  height: 25px;
+  width: 25px;
+  fill: #555;
+}
+
+.github-term:hover, .linkedin-term:hover, .angelist-term:hover {
+  fill: white;
 }
