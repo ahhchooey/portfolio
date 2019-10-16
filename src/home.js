@@ -66,6 +66,36 @@ function Home() {
 
       <div className="typewriter"></div>
 
+
+      <div className="aboutme">
+        <div className="topbar">
+
+          <div className="topbar-buttons">
+            <div className="topbar-button exit"></div>
+            <div className="topbar-button minimize"></div>
+            <div className="topbar-button maximize"></div>
+          </div>
+
+          <div className="titlebar">
+            About
+          </div>
+
+          <div className="mac-symbols">&#8997;&#8984;2</div>
+
+        </div>
+
+        <div className="aboutme-body">
+          <div>
+            Welcome to my site. Feel free to click around on all the blue links, or use the terminal to navigate if you want.
+          </div>
+
+          <div>
+            I'm Alex. I am a software engineer that likes to build cool things. Before entering the software world, I was a biology researcher in cellular development. I love to tackle difficult and interesting problems to hopefully create a positive impact on the world.
+          </div>
+        </div>
+
+      </div>
+
     </div>
   )
 }
