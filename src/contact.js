@@ -25,7 +25,7 @@ function Contact() {
 
       <div className="contact-body">
         <div className="contact-intro">
-          Feel free to contact me at <a href="mailto: ahhchui@gmail">ahhchui@gmail.com</a> or at the links below.
+          Feel free to contact me at <a href="mailto: alex@alexchui.dev">alex@alexchui.dev</a> or at the links below.
         </div>
 
         <div className="contact-links">

@@ -20,11 +20,17 @@ function Home() {
       `As long as you pay me.`,
       `And I get to do whatever I want.`,
       `You might have forgotten as to who I am already.`,
-      `I'm a Alex.`,
+      `I'm Alex.`,
       `Don't quote me.`,
       `Bye.`,
       `Go away.`,
-      `Bye`
+      `Bye.`,
+      `...`
+    ]
+
+    const thingsToSay2 = [
+      `Hi, I'm Alex.`,
+      `I'm a software developer.`
     ]
 
     const type = () => {
