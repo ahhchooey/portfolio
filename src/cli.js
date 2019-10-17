@@ -1,9 +1,13 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {withRouter} from "react-router-dom";
 import "./styles/term.css";
 
 
 function CLI(props) {
+
+  useEffect(() => {
+    props.history.push("/");
+  }, [])
 
   const [inputValue, setInputValue] = useState("");
 
