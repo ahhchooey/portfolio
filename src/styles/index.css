@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   color: rgb(255, 255, 255);
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
 
 body {
