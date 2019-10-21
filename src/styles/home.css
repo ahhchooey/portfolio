@@ -16,6 +16,12 @@
   font-size: 30px;
 }
 
+.caret {
+  border-right: 2px solid white;
+  font-size: 30px;
+  width: 2px;
+}
+
 .aboutme {
   background-color: rgb(35, 39, 49);
   box-shadow: 0 0 8px rgb(10, 10, 10);

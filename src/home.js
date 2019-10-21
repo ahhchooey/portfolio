@@ -53,7 +53,7 @@ function Home() {
         typewriter.innerHTML = homeText;
       }
 
-      let typeSpeed = 150 - Math.random() * 100; 
+      let typeSpeed = 100 - Math.random() * 50; 
       if (isDeleting) typeSpeed /= 2;
 
       if (!isDeleting && homeText === text) {
@@ -77,8 +77,10 @@ function Home() {
   return (
     <div className="home">
 
-      <div className="typewriter"></div>
-
+      <div>
+        <span className="typewriter"></span>
+        <span className="caret"></span>
+      </div>
 
       <div className="aboutme">
         <div className="topbar">
