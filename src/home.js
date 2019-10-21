@@ -12,26 +12,32 @@ function Home() {
     let isDeleting = false;
     let periodPause = 2000;
 
+    //const thingsToSay = [
+    //  `Hi, I'm Alex.`,
+    //  `I'm a software developer.`,
+    //  `For me, it's all about the culture and fit.`,
+    //  `I'm sure we'll find something that will benefit both of us.`,
+    //  `As long as you pay me.`,
+    //  `And I get to do whatever I want.`,
+    //  `You might have forgotten as to who I am already.`,
+    //  `I'm Alex.`,
+    //  `Don't quote me.`,
+    //  `Bye.`,
+    //  `Go away.`,
+    //  `Bye.`,
+    //  `...`
+    //]
+
     const thingsToSay = [
       `Hi, I'm Alex.`,
       `I'm a software developer.`,
-      `For me, it's all about the culture and fit.`,
-      `I'm sure we'll find something that will benefit both of us.`,
-      `As long as you pay me.`,
-      `And I get to do whatever I want.`,
-      `You might have forgotten as to who I am already.`,
-      `I'm Alex.`,
-      `Don't quote me.`,
-      `Bye.`,
-      `Go away.`,
-      `Bye.`,
+      `I'm currently in the SF Bay Area.`,
+      `I like to build cool things. Like:`,
+      `Interesting Projects`,
+      `Computers`,
+      `And Legos`,
+      `Feel free to explore around.`,
       `...`
-    ]
-
-    const thingsToSay2 = [
-      `Hi, I'm Alex.`,
-      `I'm a software developer.`,
-      ``
     ]
 
     const type = () => {
