@@ -71,6 +71,7 @@ function Term(props) {
   }
 
   const pushRoot = (e) => {
+    e.stopPropagation();
     e.preventDefault();
     inputHistory("root");
 
@@ -79,6 +80,7 @@ function Term(props) {
   }
 
   const pushProjects = (e) => {
+    e.stopPropagation();
     e.preventDefault();
     inputHistory("projects");
     const point = document.createElement("div");
@@ -90,6 +92,7 @@ function Term(props) {
   }
 
   const pushSkills = (e) => {
+    e.stopPropagation();
     e.preventDefault();
     inputHistory("skills");
     const point = document.createElement("div");
@@ -101,6 +104,7 @@ function Term(props) {
   }
 
   const pushChangeLog = (e) => {
+    e.stopPropagation();
     e.preventDefault();
     inputHistory("changelog");
     const point = document.createElement("div");
@@ -112,6 +116,7 @@ function Term(props) {
   }
 
   const pushContact = (e) => {
+    e.stopPropagation();
     e.preventDefault();
     inputHistory("contact");
     const point = document.createElement("div");
