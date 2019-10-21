@@ -15,6 +15,7 @@
 .skills-body {
   font-size: 20px;
   padding: 15px 10px;
+  overflow: scroll;
 
   display: flex;
   flex-direction: row;
@@ -27,4 +28,11 @@ svg {
   height: 80px;
   width: 80px;
   margin: 15px;
+}
+
+@media (max-width: 920px) {
+  .skills {
+    width: 95%;
+    height: 90%;
+  }
 }

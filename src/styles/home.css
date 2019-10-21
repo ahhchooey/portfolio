@@ -38,3 +38,23 @@
 .aboutme-body > div {
   color: rgb(240, 240, 240);
 }
+
+@media (max-width: 920px) {
+  .home {
+    width: 95%;
+    justify-content: space-around;
+  }
+
+  .typewriter-cont {
+    height: 60px;
+    flex-shrink: 0;
+  }
+
+  .typewriter {
+    font-size: 20px;
+  }
+
+  .caret {
+    font-size: 20px;
+  }
+}

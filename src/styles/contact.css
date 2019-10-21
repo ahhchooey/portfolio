@@ -25,6 +25,7 @@
 
 .contact-body a {
   text-decoration: none;
+  color: rgb(0, 255, 255);
 }
 
 .contact-links {
@@ -37,4 +38,11 @@
 
 .github:hover, .linkedin:hover, .angelist:hover {
   fill: #ccc;
+}
+
+@media (max-width: 920px) {
+  .contact {
+    width: 95%;
+    height: 90%;
+  }
 }

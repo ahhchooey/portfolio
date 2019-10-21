@@ -11,3 +11,24 @@
   align-items: center;
 }
 
+@media (max-width: 920px)  {
+  .App {
+    width: 100vw;
+    height: 100vh;
+    
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 360px)  {
+  * {
+    font-size: 15px;
+  }
+
+  .App {
+    width: 100vw;
+    height: 100vh;
+    
+    flex-direction: column;
+  }
+}

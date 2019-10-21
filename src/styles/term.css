@@ -139,3 +139,13 @@
 .github-term:hover, .linkedin-term:hover, .angelist-term:hover {
   fill: white;
 }
+
+@media (max-width: 920px) {
+  .term {
+    margin: 10px 0px;
+    width: 95%;
+    height: 40vh;
+
+    flex-shrink: 0;
+  }
+}

@@ -58,3 +58,14 @@ h1 {
   margin-top: 10px;
   margin-bottom: 20px;
 }
+
+@media (max-width: 920px) {
+  .projects {
+    width: 95%;
+  }
+
+  .project-item-body {
+    line-height: 17px;
+    font-size: 12px;
+  }
+}

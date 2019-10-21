@@ -77,7 +77,7 @@ function Home() {
   return (
     <div className="home">
 
-      <div>
+      <div className="typewriter-cont">
         <span className="typewriter"></span>
         <span className="caret"></span>
       </div>
