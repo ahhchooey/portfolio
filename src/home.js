@@ -30,7 +30,8 @@ function Home() {
 
     const thingsToSay2 = [
       `Hi, I'm Alex.`,
-      `I'm a software developer.`
+      `I'm a software developer.`,
+      ``
     ]
 
     const type = () => {
@@ -94,7 +95,7 @@ function Home() {
           <div>
             Welcome to my site. Feel free to click around on all the blue links, or use the terminal to navigate if you want.
           </div>
-
+          <br/>
           <div>
             I'm Alex. I am a software engineer that likes to build cool things. Before entering the software world, I was a biology researcher in cellular development. I love to tackle difficult and interesting problems to hopefully create a positive impact on the world.
           </div>

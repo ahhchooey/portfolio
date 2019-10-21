@@ -29,6 +29,6 @@
   padding: 18px;
 }
 
-.aboutme-body div {
+.aboutme-body > div {
   color: rgb(240, 240, 240);
 }
