@@ -28,43 +28,43 @@ function Changelog() {
         <br />
 
 
-        <div className="version">v0.10 - 2019</div>
+        <div className="version">v0.10</div>
         <div className="changes">Graduated App Academy</div>
         <div className="changes">Hacker in Residence at App Academy</div>
 
-        <div className="version">v0.9 - 2019</div>
+        <div className="version">v0.9</div>
         <div className="changes">Left Research</div>
         <div className="changes">Started App Academy</div>
 
-        <div className="version">v0.8 - 2018</div>
+        <div className="version">v0.8</div>
         <div className="changes">Research at UCSF</div>
 
-        <div className="version">v0.7 - 2017</div>
+        <div className="version">v0.7</div>
         <div className="changes">Left Research Intern</div>
         <div className="changes">MCAT</div>
 
-        <div className="version">v0.6 - 2016</div>
+        <div className="version">v0.6</div>
         <div className="changes">Left Nepal</div>
         <div className="changes">Research at ADMD</div>
 
-        <div className="version">v0.5 - 2016</div>
+        <div className="version">v0.5</div>
         <div className="changes">Went to Nepal</div>
         <div className="changes">Volunteer at Stupa Hospital</div>
 
-        <div className="version">v0.4 - 2016</div>
+        <div className="version">v0.4</div>
         <div className="changes">Graduated College</div>
         <div className="changes">Moved back to the Bay</div>
         
-        <div className="version">v0.3 - 2012</div>
-        <div className="changes">Graduated Highschool</div>
+        <div className="version">v0.3</div>
+        <div className="changes">Graduated Dougherty Valley Highschool</div>
         <div className="changes">Moved to SoCal</div>
         <div className="changes">Started UCSD</div>
 
-        <div className="version">v0.2 - 2003</div>
+        <div className="version">v0.2</div>
         <div className="changes">Moved from San Francisco</div>
         <div className="changes">Moved to East Bay</div>
 
-        <div className="version">v0.1 - 1994</div>
+        <div className="version">v0.1</div>
         <div className="changes">First Release</div>
       </div>
 
